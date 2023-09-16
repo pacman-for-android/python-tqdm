@@ -39,8 +39,8 @@ check() {
 package() {
   cd tqdm
   python -m installer --destdir="${pkgdir}" dist/*.whl
-  install -Dm 644 LICENCE "${pkgdir}/usr/share/licenses/${pkgname}/LICENCE"
-  install -Dm 644 tqdm/completion.sh "${pkgdir}/usr/share/bash-completion/completions/tqdm"
+  install -Dm 644 LICENCE "${pkgdir}/data/usr/share/licenses/${pkgname}/LICENCE"
+  install -Dm 644 tqdm/completion.sh "${pkgdir}/data/usr/share/bash-completion/completions/tqdm"
 }
 
 # vim:set ts=2 sw=2 et:
